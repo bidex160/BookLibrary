@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardvv"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="30dp">
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp">
+
+        <ImageView
+            android:id="@+id/cimgv"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+
+            android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/cbookname"
+        android:layout_toRightOf="@+id/cimgv"
+        android:layout_marginTop="12dp"
+
+        android:text="BooK Name" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/cimgv"
+        android:layout_below="@+id/cbookname"
+        android:id="@+id/cbookauthor"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="12dp"
+        android:text="Book Author"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cbookauthor"
+        android:layout_toRightOf="@+id/cimgv"
+        android:id="@+id/cbookpages"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="12dp"
+        android:text="Pages"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="160dp"
+              android:id="@+id/r"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/currentrd"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shape"
+            android:text="Currently Reading Book" />
+
+        <Button
+            android:id="@+id/wanto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/currentrd"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shape"
+            android:text="Want to Read" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wanto"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shape"
+            android:id="@+id/alreadrd"
+            android:text="Alreadyread" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/r"
+        android:layout_marginTop="2dp">
+
+        <TextView
+            android:id="@+id/bknamex"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="60dp"
+            android:layout_toRightOf="@+id/bkimg"
+            android:text="BookName"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/bkathour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bknamex"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="34dp"
+            android:layout_toRightOf="@+id/bkimg"
+            android:text="Author Name"
+
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/bkimg"
+            android:layout_width="122dp"
+            android:layout_height="189dp"
+
+
+            android:layout_marginLeft="20dp"
+
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/descripton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bkimg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:text="Description"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
